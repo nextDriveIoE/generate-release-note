@@ -17,7 +17,5 @@ const options = {
     config
 }
 
-console.log(options);
-
 const generateCommand = new generator.GenerateCommand()
 generateCommand.handler(options)
