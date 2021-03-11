@@ -8,12 +8,16 @@ const start = core.getInput('base_version');
 const end = core.getInput('current_version');
 const config = core.getInput('config_name');
 
-const generateCommand = new generator.GenerateCommand()
-generateCommand.handler({
+const options = {
     token,
     username,
     password,
     start,
     end,
     config
-})
+}
+
+console.log(options);
+
+const generateCommand = new generator.GenerateCommand()
+generateCommand.handler(options)
