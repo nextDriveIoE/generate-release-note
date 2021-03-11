@@ -1,0 +1,11 @@
+{
+  "name": "generate-release-note",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "git@github.com:nextDriveIoE/generate-release-note.git",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@nextdriveioe/release-note-generator": "^0.1.4"
+  }
+}

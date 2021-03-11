@@ -1,0 +1,28 @@
+name: 'Generate release note'
+description: 'Generate github issue and jira issue'
+inputs:
+  github_token:
+    description: 'github token'
+    required: true
+  jira_user:
+      description: 'jira user'
+      required: true
+  jira_token:
+    description: 'jira token'
+    required: true
+  base_version:
+    description: 'base version'
+    required: true
+  current_version:
+    description: 'current version'
+    required: true
+  config_name:
+    description: 'config name'
+    required: false
+    default: note
+outputs:
+  success:
+    description: 'Generate success'
+runs:
+  using: 'node12'
+  main: 'index.js'
