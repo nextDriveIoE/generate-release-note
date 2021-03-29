@@ -18,4 +18,4 @@ const options = {
 }
 
 const generateCommand = new generator.GenerateCommand()
-generateCommand.handler(options)
+generateCommand.handler(options).catch((e) => console.error(e))
